@@ -22,8 +22,9 @@ background-color:#F6F6E9;
 height: 30px;
 }
 
-.logsign{
-    width: 150px;
+.logsign {
+    position:relative;
+    left:88%;
     display: flex;
     justify-content: space-around;
     align-items: center;
