@@ -4,27 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <nav >
-        <div class="navbar">
-          <img>
-            <ul class="navigation">
-                    <li class="navli">HOME</li>
-                    <li class="navli">ABOUT</li>
-                    <li class="navli">CONTACT US</li>
-                    <li class="navli">CART</li>      
-            </ul>
-        </div>
-    </nav>
     <header>
-        <div class="logo">
-            <img src="./logo.jpg" alt="logo">
-        </div>
-        <div class="logo">
-            <img src="./logo.jpg" alt="logo">
+        <div class="logo" id="logo">
+            <img src="logo.jpg" class="logoimg" alt="logo">
         </div>
         <form class="form" id="form">
         <label for="first-name">First Name :</label><br>
@@ -41,20 +27,27 @@
         <input type="password" name="ConfirmPass" id="Specs" /><br>
         <button type="submit "class="submit" id="submit">Submit</button><br><br>
         <!--new changes-->
-        <p class="account">Dont have an account? <a href="#" class="hide" id="hide">Sign up</a></p>
+        <p class="account">Already have an account? <button onclick="displayLogin()">Sign in</button></p>
+        
         </form>
         <!--new changes-->
-    <!--new changes-->
-    <form class="form1" id="form1">
+        
+        
+        
+
+        
+        
+        <!--new changes-->
+        <form class="form1" id="form1">
         <label for="User-name">User Name :</label><br>
         <input type="text" name="Product-Specs" id="User-name" /><br>
         <label for="Password">Password :</label><br>
         <input type="password" name="Password" id="Specs" /><br>
         <button type="submit "class="submit" id="submit">Log in</button><br><br>
-        <p class="account">Already have an account? <button onclick="displayLogin()">Sign in</button></p>
+        <p class="account">Dont have an account? <a href="#" class="hide" id="hide" onclick="logoHeight()">Sign up</a></p>
         </form>
         <!--new changes-->
     </header>
-    <script src="./app.js" defer></script>
+    <script src="app.js" defer></script>
 </body>
 </html>
