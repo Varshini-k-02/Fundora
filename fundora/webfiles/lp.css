@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    list-style: none;
+    font-family: 'Catamaran', sans-serif;
+       
+}
+
+/* html{
+    min-width: 800px;
+} */
+body{
+    background-image: url("decent.jpg");
+}
+.loginsignup{
+display: flex;
+justify-content: right;
+align-items: center;
+background-color:#ffce6d;
+height: 30px;
+}
+
+.logsign{
+    width: 150px;
+    display: flex;
+    position:relative; 
+    left:81.5%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ls{
+
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 80px;
+    height: 100%;
+    color:#253439;
+
+}
+.ls:hover{
+
+    color:#F7B9A1;
+    transition:.45s;
+
+}
+
+.navbar{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:80px;
+    background-color: #2b4852;
+}
+
+.navigation{
+    
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    align-items: center;
+    margin-left: 60px;
+    padding-left: -30px;
+    margin-right: 10px;
+  
+}
+
+.navli{
+    color: #F6F6E9;
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    width: 120px;
+
+    align-items: center;
+    font-size: 18px;
+}
+
+.navli:hover{
+
+    color: #ffce6d;
+    transition: .45s;;
+}
+
+.donateimg{
+    object-fit: cover;
+    justify-content: flex-end;
+    width: 1000px;
+    height:1000px;
+    background-image: url("fundora/webfiles/donate.jpg");
+}
+
+.blkbg{
+    position: relative;
+    justify-content: right;
+    width: 2000px;
+    height: 1200px;
+}
