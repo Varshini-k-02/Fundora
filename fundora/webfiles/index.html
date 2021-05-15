@@ -9,45 +9,51 @@
 </head>
 <body>
     <nav >
-
-    
         <div class="navbar">
- 
-            
           <img>
-
             <ul class="navigation">
-                
                     <li class="navli">HOME</li>
                     <li class="navli">ABOUT</li>
                     <li class="navli">CONTACT US</li>
-                    <li class="navli">CART</li>
-                
+                    <li class="navli">CART</li>      
             </ul>
-
         </div>
-        
-
     </nav>
     <header>
         <div class="logo">
             <img src="./logo.jpg" alt="logo">
         </div>
-    <div class="form" id="form">
-        <label for="First-name">First Name :</label><br>
-        <input type="text" name="Product-name" id="First-name" /><br>   
-        <label for="Last-name">Last Name :</label><br>
-        <input type="text" name="Product-Model" id="Last-name" /><br>
-        <label for="User-name">User Name :</label><br>
-        <input type="text" name="Product-Specs" id="User-name" /><br>
+        <div class="logo">
+            <img src="./logo.jpg" alt="logo">
+        </div>
+        <form class="form" id="form">
+        <label for="first-name">First Name :</label><br>
+        <input type="text" name="First-name" id="first-name" /><br>   
+        <label for="last-name">Last Name :</label><br>
+        <input type="text" name="last-name" id="last-name" /><br>
+        <label for="user-name">User Name :</label><br>
+        <input type="text" name="user-name" id="user-name" /><br>
         <label for="Phone-no">Phone No :</label><br>
-        <input type="text" name="Product-Specs" id="Phone-no" /><br>
+        <input type="text" name="Phone-no" id="Phone-no" /><br>
         <label for="Password">Password :</label><br>
-        <input type="password" name="Password" id="Specs" /><br>
+        <input type="password" name="Password" id="password" /><br>
         <label for="ConfirmPass">Confirm Password :</label><br>
         <input type="password" name="ConfirmPass" id="Specs" /><br>
-        <button class="submit" id="submit">Submit</button>
-    </div>
+        <button type="submit "class="submit" id="submit">Submit</button><br><br>
+        <!--new changes-->
+        <p class="account">Dont have an account? <a href="#" class="hide" id="hide">Sign up</a></p>
+        </form>
+        <!--new changes-->
+    <!--new changes-->
+    <form class="form1" id="form1">
+        <label for="User-name">User Name :</label><br>
+        <input type="text" name="Product-Specs" id="User-name" /><br>
+        <label for="Password">Password :</label><br>
+        <input type="password" name="Password" id="Specs" /><br>
+        <button type="submit "class="submit" id="submit">Log in</button><br><br>
+        <p class="account">Already have an account? <button onclick="displayLogin()">Sign in</button></p>
+        </form>
+        <!--new changes-->
     </header>
     <script src="./app.js" defer></script>
 </body>
