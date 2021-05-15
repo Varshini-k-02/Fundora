@@ -90,6 +90,7 @@ flex-wrap: wrap;
     padding: 30px 60px;
     border-radius: 10px;
     background-color: white;
+    z-index: 2;
     /* position: absolute;
     left: 75%;
     top: 50%; */
