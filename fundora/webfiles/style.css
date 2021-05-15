@@ -130,3 +130,61 @@ input{
     border-radius: 10px;
     max-height: 500px;
 }
+
+
+/*new changes*/
+.form.visible{
+    display: none;
+}
+.account{
+    font-size: 20px;
+}
+.account a{
+    font-size: 20px;
+}
+.form1{
+    max-width: 1440px;
+    z-index: 1;
+    padding: 30px 40px;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    left: 75%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+}
+.form1 label{
+    font-size: 15px;
+}
+.form1 button{
+    font-size: 20px;
+    padding: 6px 15px;
+    background-color: #61A6AB;
+    border: 1px #61A6AB solid;
+    border-radius: 10px;
+    color: white;
+}
+.form1 button:hover{
+    background-color: #8cc5ca;
+    transition: 0.5s;
+    color: black;
+}
+.form1.visible{
+    display: none;
+}
+.hide{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 15px;
+    background-color: #61A6AB;
+    border: 1px #61A6AB solid;
+    border-radius: 10px;
+    color: white;
+}
+.hide a:hover{
+    background-color: #8cc5ca;
+    transition: 0.5s;
+    color: black;
+    cursor: context-menu;
+}
