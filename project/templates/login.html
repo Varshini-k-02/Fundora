@@ -6,49 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'style.css' %}">
-    <title>Document</title>
+    <title>Fundora | Login/SignUp</title>
 </head>
 <body>
     <header>
         <div class="logo" id="logo">
-           <a href="{% static 'Fundoramain.html' %}"> <img src="{% static 'logo.jpg' %}" class="logoimg" alt="logo"> </a> 
+           <a href="Fundoramain.html"> <img src="{% static 'logo.jpg' %}" class="logoimg" alt="logo"> </a> 
         </div>
-        <form class="form" id="form">
+    <form class="form" id="form" action="login.html" method="post">
+        {% csrf_token %}
         <label for="first-name">First Name :</label><br>
-        <input type="text" name="First-name" id="first-name" /><br>   
+        <input type="text" name="fname" id="first-name" /><br>   
         <label for="last-name">Last Name :</label><br>
-        <input type="text" name="last-name" id="last-name" /><br>
-        <label for="user-name">User Name :</label><br>
-        <input type="text" name="user-name" id="user-name" /><br>
+        <input type="text" name="lname" id="last-name" /><br>
+        <label for="email-id">Email Id :</label><br>
+        <input type="text" name="emailid" id="email-id" /><br>
         <label for="Phone-no">Phone No :</label><br>
-        <input type="text" name="Phone-no" id="Phone-no" /><br>
+        <input type="text" name="phno" id="Phone-no" /><br>
         <label for="Password">Password :</label><br>
-        <input type="password" name="Password" id="password" /><br>
+        <input type="password" name="pwd" id="password" /><br>
         <label for="ConfirmPass">Confirm Password :</label><br>
-        <input type="password" name="ConfirmPass" id="Specs" /><br>
+        <input type="password" name="cpwd" id="Specs" /><br>
         <button type="submit "class="submit" id="submit">Submit</button><br><br>
         <!--new changes-->
         <p class="account">Already have an account? <a href="#" onclick="displayLogin()" class="hide">Sign in</a></p>
         
-        </form>
+    </form>
         <!--new changes-->
-        
-        
-        
-
-        
-        
+       
         <!--new changes-->
-        <form class="form1" id="form1">
-        <label for="User-name">User Name :</label><br>
-        <input type="text" name="Product-Specs" id="User-name" /><br>
+    <form class="form1" id="form1" action='Fundoramain.html' method="post">
+        {% csrf_token %}
+        <label for="email-id">Email Id :</label><br>
+        <input type="text" name="emailid" id="email-id" /><br>
         <label for="Password">Password :</label><br>
-        <input type="password" name="Password" id="Specs" /><br>
+        <input type="password" name="pwd" id="Specs" /><br>
         <button type="submit "class="submit" id="submit">Log in</button><br><br>
         <p class="account">Dont have an account? <a href="#" class="hide" id="hide" onclick="logoHeight()">Sign up</a></p>
-        </form>
+    </form>
         <!--new changes-->
+        <div>{% for message in messages %}
+            <h2>
+                <script>
+                    alert('{{ message }}');
+                </script>
+            </h2>
+            {% endfor %}
+        </div>
     </header>
-    <script src="{% static 'app.js' %}" defer></script>
+    <script src="{% static 'app.js' %}" defer>
+        
+    </script>
+
 </body>
 </html>
