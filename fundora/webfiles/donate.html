@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="donatestyle.css">
+    <title>Donate</title>
+</head>
+<body>
+    <div class="main" id="main">
+        <label for="ptype">Product Type :</label><br>
+        <input type="text" name="ptype" id="val" /><br><br>
+        <label for="pcomp">Product company :</label><br>
+        <input type="text" name="pcomp" id="val" /><br><br>
+        <label for="pmod">Product Model :</label><br>
+        <input type="text" name="pmod" id="val"/><br><br><br> 
+        <a href="#" class="Cancel" id="Cancel">Cancel</a>
+        <a href="#" class="cont" id="cont">Continue</a>
+    </div>
+    <div class="laptop" id="laptop">
+        <label for="lram">Product Ram :</label><br>
+        <input type="text" name="lram" id="lmod" /><br><br>  
+        <label for="lhdd">Product Storage :</label><br>
+        <input type="text" name="lhdd" id="lmod" /><br><br>  
+        <label for="lprocessor">Product processor :</label><br>
+        <input type="text" name="lprocessor" id="lmod"/><br><br>  
+        <label for="lgraphics">Product Graphics :</label><br>
+        <input type="text" name="lgraphics" id="lmod"/><br><br>  
+        <label for="lscreen">Product Screen-specs :</label><br>
+        <input type="text" name="lscreen" id="lmod"/><br><br>
+        <label for="yrs">Product history :</label><br>
+        <input type="text" name="yrs" id="lmod"/><br><br>
+        <a href="#" class="back" id="backlp">back</a>
+        <a href="#"><button class="sub" id="lsub" onclick="productData('#lmod')">Submit</button></a>
+    </div>
+    <div class="phone" id="phone">
+        <label for="mram">Product Ram :</label><br>
+        <input type="text" name="mram" id="pmod" /><br><br>  
+        <label for="mhdd">Product Storage :</label><br>
+        <input type="text" name="mhdd" id="pmod" /><br><br>  
+        <label for="mprocessor">Product processor :</label><br>
+        <input type="text" name="mprocessor" id="pmod"/><br><br>  
+        <label for="mgraphics">Product Graphics :</label><br>
+        <input type="text" name="mgraphics" id="pmod"/><br><br>  
+        <label for="mscreen">Product Screen-specs :</label><br>
+        <input type="text" name="mscreen" id="pmod"/><br><br>
+        <label for="yrs">Product history :</label><br>
+        <input type="text" name="yrs" id="pmod"/><br><br>  
+        <a href="#" class="back" id="backph">back</a>
+        <button class="sub" id="psub" onclick="productData('#pmod')">Submit</button>
+    </div>
+    <div class="printer" id="printer">
+        <label for="pcat">Product Catridge :</label><br>
+        <input type="text" name="pcat" id="prmod" /><br><br> 
+        <label for="pcap">Product page-capacity :</label><br>
+        <input type="text" name="pcomp" id="prmod" /><br><br>
+        <label for="yrs">Product history :</label><br>
+        <input type="text" name="yrs" id="prmod"/><br><br>
+        <a href="#" class="back" id="backpr">back</a>
+        <button class="sub" id="prsub" onclick="productData('#prmod')">Submit</button>
+    </div>
+    <ul id="summary">
+    
+    </ul>
+    <script src="./donateaapp.js" defer></script>
+</body>
+</html>
