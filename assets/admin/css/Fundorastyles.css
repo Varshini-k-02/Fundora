@@ -76,7 +76,11 @@ iframe{
     border-bottom: #ffce6d solid 2px;
 }
 
-#homepg{
+.underlineRemove{
+
+    text-decoration: none;
+}
+#selectedNav{
 
     color: #FFCE6D;
     border-bottom: transparent solid 2px;
