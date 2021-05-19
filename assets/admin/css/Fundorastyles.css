@@ -16,13 +16,15 @@
 
 .iframe{
  position: relative;
- width:50%;
+ width:750px;
  height:500px ;
- margin-top: 150px;
- padding-right:120px ;
- padding-left:120px ;
-left: 50%;
  overflow-y:hidden;
+ background-color: #253439;
+ padding-top: 40px;
+ padding-bottom: 40px;
+ padding-left: 60px;
+ 
+ 
 }
 
 iframe{
@@ -31,27 +33,17 @@ iframe{
     height:100%;
 }
 
-nav{
+.navbar{
 
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
     height:950px;
     background-image: url("https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
     background-size: cover;
     background-color: rgb(0, 0, 0,0.4);
     background-blend-mode: multiply;
-
-
-}
-
-.navbar{
-
-    display: flex;
- 
-    justify-content: space-between;
-    align-items: start;
-    height:90px;
-
 }
 
 .navigation{
@@ -132,10 +124,229 @@ a{
     transition: 0.5s;
 }
 
-.laptops{
+#Laptops{
 
-    overflow-x:auto;
+  
+  overflow-x:auto;
   width: 100%;
   height: 310px;
   background-color:#FFCE6D  ;
+}
+
+
+
+#Mobiles{
+
+
+  overflow-x:auto;
+  width: 100%;
+  height: 310px;
+  background-color:white ;
+
+}
+
+
+#Accessories{
+
+    overflow-x:auto;
+    width: 100%;
+    height: 310px;
+    background-color:blue ;
+
+}
+
+.abtus{
+    text-align: center;
+    font-size: 30px;
+    background-color: #aba597ea;
+    padding: 70px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.598); 
+    
+   
+}
+
+p{
+    font-size: 60px;
+    font-style: 40px bolder;
+    opacity: 70%;
+}
+
+.vidcntnt{
+    text-align: center;
+    align-content: center;
+    width: 720px;
+    height: 500px;
+    display: flex;
+    justify-content:center;
+    background-color: #253439;
+    padding: 50px;
+    padding-top: 100px;
+    color: #F6F4F1;
+    
+    
+    
+}
+
+
+
+.intro {
+    background: #253439;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+  }
+
+  .slider {
+    background: rgb(97, 105, 109);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-100%);
+  }
+
+  .hide {
+    background: #253439;
+    overflow: hidden;
+  }
+
+  .hide span {
+    transform: translateY(100%);
+    display: inline-block;
+  }
+
+  .ovrfl{
+      overflow-y: hidden;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      background-color: #253439;
+  }
+
+  i{
+      
+      color: white;
+      position: absolute;
+      top: 200px;
+      
+
+  }
+
+  .gadimg{
+    background-image: url("https://cdn.vox-cdn.com/thumbor/7hBLo-4d4BE0nyfbeU89CiJkxzQ=/0x216:2625x1693/1600x900/cdn.vox-cdn.com/uploads/chorus_image/image/51537699/jbareham_160418_0931_0086_FINAL_NO_BUFFER_5MB_02.0.0.jpg");
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    height:550px;
+    background-color: rgb(0, 0, 0,0.5);
+    background-blend-mode: multiply;
+    margin-top: -100px;
+}
+
+
+#review{
+    position: relative;
+}
+
+h1{
+    position: absolute;
+    top: 20px;
+    padding-left: 39rem;
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.904);
+}
+
+.us1{
+    background-color: #253439;
+    text-align: center;
+    width: 22%;
+    height: 200px;
+    opacity: 90%;
+    color: white;
+    position: absolute;
+    top: 170px;
+    margin-left: 40px;
+    padding-top: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 25px;
+    font-style: italic;
+}
+
+.pr1{
+    padding-left: 12rem;
+}
+
+.us2{
+    background-color: #253439;
+    text-align: center;
+    width: 22%;
+    height: 200px;
+    opacity: 90%;
+    color: white;
+    position: absolute;
+    top: 170px;
+    margin-left: 405px;
+    padding-top: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 25px;
+    font-style: italic;
+}
+
+.pr2{
+    padding-left: 35rem;
+}
+
+
+
+
+.us3{
+    background-color: #253439;
+    text-align: center;
+    width: 22%;
+    height: 200px;
+    opacity: 90%;
+    color: white;
+    position: absolute;
+    top: 170px;
+    margin-left: 768px;
+    padding-top: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 25px;
+    font-style: italic;
+}
+
+.pr3{
+    padding-left: 58rem;
+}
+
+
+.us4{
+    background-color: #253439;
+    text-align: center;
+    width: 22%;
+    height: 200px;
+    opacity: 90%;
+    color: white;
+    position: absolute;
+    top: 170px;
+    margin-left: 1130px;
+    padding-top: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 25px;
+    font-style: italic;
+}
+
+.pr4{
+    padding-left: 80rem;
 }
