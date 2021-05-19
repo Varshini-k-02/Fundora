@@ -3,13 +3,14 @@
     font-size: 25px;
 }
 body{
-    background-color: #2980b9;
+    background-image: url("https://images.pexels.com/photos/3183198/pexels-photo-3183198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
 }
 .main{
     max-width: 1440px;
     padding: 30px 40px;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(37, 52, 57,0.8);
     position: absolute;
     left: 50%;
     top: 50%;
