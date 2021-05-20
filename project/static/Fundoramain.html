@@ -1,0 +1,124 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'Fundorastyles.css' %}">
+    <title>Fundora | Main</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar">  
+          <img>
+            <ul class="navigation">               
+                    <a href="Fundoramain.html" class="underlineRemove"><li id="selectedNav" class="navli">HOME</li></a>
+                    <li class="navli">PRODUCTS</li>
+                    <a href="donate.html" class="underlineRemove"><li class="navli">DONATE</li></a>
+                    <a href="login.html" class="underlineRemove"><li class="navli">SIGN IN/UP</li></a>          
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div class="productdisplay">
+
+        <div class="productItem" >
+            <li id="Lap" onclick="laptops()" >Laptops</li>
+            <li id="Mob" onclick="mobiles()" >Mobiles</li>
+            <li id="Access" onclick="accessories()" >Printers</li>
+            
+        </div>
+        
+        <div  id="Laptops">
+    
+    
+    
+        </div>
+    
+        <div  id="Mobiles">
+    
+    
+    
+        </div>
+    
+        <div  id="Accessories">
+    
+    
+    
+        </div>
+    
+    
+    
+        
+    </div>
+
+<div class="ovrfl">
+<div class="iframe">
+    <iframe  src="https://www.youtube.com/embed/jC0gbgBGYlY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="vidcntnt">
+    <div class="intro">
+        <div class="intro-text">
+          <h3 class="hide">
+              <span class="text">
+                <div data-aos="fade-up">
+    Growth in the IT and communication sectors has enhanced the usage of the electronic equipment exponentially. Faster upgradation of electronic product is forcing consumers to discard old electronic products very quickly, which, in turn, adds to e-waste to the solid waste stream. The growing problem of e-waste calls for greater emphasis on recycling e-waste and better e-wastemanagement.E-waste recyclers use processes such as open incineration and acid-leeching. This situation could be improved by creating awareness and improving the infrastructure of recycling units along with the prevalent policies. The majority of the e-waste collected in India is managed by an unorganized sector.</span> </h3> 
+                </div> 
+</div>
+</div>
+</div>
+<div class="slider"></div>
+
+ <div class="abtus">
+    
+              <p> <span> ABOUT US<br/></span></p>
+<div data-aos="zoom-in">
+    Here at Fundora, we provide solutions to your technical needs. We will do a complete security check before collecting/ delivering it to our customers. We help the students, financially challenged people to acquire the electronic gadgets they cannot afford by providing the gadgets at affordable costs.
+</div> 
+</div>
+
+<div id="review">
+    
+    <div class="gadimg">
+
+    </div>
+    <h1> REVIEW </h1>
+
+     <div class="us1">
+         <h4>"I was able to buy a laptop from this website at an affordable cost. It works just as fine as a new laptop would." </h4>
+     </div>
+     <div class="pr1">
+  <i class="far fa-user fa-2x"></i>
+</div>
+
+<div class="us2">
+    <h5>I was able to buy a laptop from this website at an affordable cost. It works just as fine as a new laptop would. </h5>
+</div>
+<div class="pr2">
+<i class="far fa-user fa-2x"></i>
+</div>
+
+<div class="us3">
+    <h5>I was able to buy a laptop from this website at an affordable cost. It works just as fine as a new laptop would. </h5>
+</div>
+<div class="pr3">
+<i class="far fa-user fa-2x"></i>
+</div>
+
+ <script src="https://kit.fontawesome.com/de9f6bb63b.js" crossorigin="anonymous"></script>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+    AOS.init();
+  </script>
+ <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="{% static 'anime.js' %}"></script>
+    <script src="{% static 'Fundorafunc.js' %}"></script>
+</body>
+</html>

@@ -15,7 +15,7 @@
           <img>
             <ul class="navigation">               
                     <a href="Fundoramain.html" class="underlineRemove"><li id="selectedNav" class="navli">HOME</li></a>
-                    <li class="navli">PRODUCTS</li>
+                    <a href="product.html"class="underlineRemove"><li class="navli">PRODUCTS</li></a>
                     <a href="donate.html" class="underlineRemove"><li class="navli">DONATE</li></a>
                     <a href="login.html" class="underlineRemove"><li class="navli">SIGN IN/UP</li></a>          
             </ul>
@@ -107,7 +107,370 @@
 <div class="pr3">
 <i class="far fa-user fa-2x"></i>
 </div>
+<div class="pr4">
+    <i class="far fa-user fa-2x"></i>
+    </div>
+<div class="us4">
+        <h5>I was able to buy a laptop from this website at an affordable cost. It works just as fine as a new laptop would. </h5>
+    </div>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
 
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Catamaran', sans-serif;
+    overflow-x: hidden;
+   
+}
+
+/* html{
+    min-width: 800px;
+} */
+
+.iframe{
+ position: relative;
+ width:750px;
+ height:500px ;
+ overflow-y:hidden;
+ background-color: #253439;
+ padding-top: 40px;
+ padding-bottom: 40px;
+ padding-left: 60px;
+ 
+ 
+}
+
+iframe{
+    
+    width: 100%;
+    height:100%;
+}
+
+.navbar{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    height:950px;
+    background-image: url("https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-size: cover;
+    background-color: rgb(0, 0, 0,0.4);
+    background-blend-mode: multiply;
+}
+
+.navigation{
+    
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    align-items: center;
+    margin-left: 80px ;
+    margin-right: 80px;
+  
+}
+
+.navli{
+    color: #F6F6E9;
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    width: 120px;
+    
+    border-bottom: transparent solid 2px;
+    align-items: center;
+    font-size: 18px;
+}
+
+.navli:hover{
+
+    color: #FFCE6D;
+    transition: .45s;
+    border-bottom: #ffce6d solid 2px;
+}
+
+.underlineRemove{
+
+    text-decoration: none;
+}
+#selectedNav{
+
+    color: #FFCE6D;
+    border-bottom: transparent solid 2px;
+}
+a{
+    text-decoration: none;
+    
+}
+
+.productdisplay{
+
+    display: flex;
+    justify-content: space-around ;
+
+    flex-wrap: wrap;
+    width: 100%;
+    height: 400px;
+    background-color: #253439;
+    box-shadow: 0px 0px 30px 15px rgb(0, 0, 0,0.5);
+    border-top: 1px solid #FFCE6D ;
+    border-bottom: 1px solid #FFCE6D ;
+
+}
+
+.productItem{
+
+    height:10%;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+    margin-top: 15px;
+    color: #F6F6E9;
+   
+}
+
+.productItem li{
+    height:100%;
+}
+
+.productItem li:hover {
+
+    color: #FFCE6D;
+    border-bottom: 1px solid #FFCE6D ;
+    transition: 0.5s;
+}
+
+#Laptops{
+
+  
+  overflow-x:auto;
+  width: 100%;
+  height: 310px;
+  background-color:#FFCE6D  ;
+}
+
+
+
+#Mobiles{
+
+
+  overflow-x:auto;
+  width: 100%;
+  height: 310px;
+  background-color:white ;
+
+}
+
+
+#Accessories{
+
+    overflow-x:auto;
+    width: 100%;
+    height: 310px;
+    background-color:blue ;
+
+}
+
+.abtus{
+    text-align: center;
+    font-size: 30px;
+    background-color: #aba597ea;
+    padding: 70px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.598); 
+    
+   
+}
+
+p{
+    font-size: 60px;
+    font-style: 40px bolder;
+    opacity: 70%;
+}
+
+.vidcntnt{
+    text-align: center;
+    align-content: center;
+    width: 720px;
+    height: 500px;
+    display: flex;
+    justify-content:center;
+    background-color: #253439;
+    padding: 50px;
+    padding-top: 100px;
+    color: #F6F4F1;
+    
+    
+    
+}
+
+
+
+.intro {
+    background: #253439;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+  }
+
+  .slider {
+    background: rgb(97, 105, 109);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-100%);
+  }
+
+  .hide {
+    background: #253439;
+    overflow: hidden;
+  }
+
+  .hide span {
+    transform: translateY(100%);
+    display: inline-block;
+  }
+
+  .ovrfl{
+      overflow-y: hidden;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      background-color: #253439;
+  }
+
+  i{
+      
+      color: white;
+      position: absolute;
+      top: 200px;
+      
+
+  }
+
+  .gadimg{
+    background-image: url("https://cdn.vox-cdn.com/thumbor/7hBLo-4d4BE0nyfbeU89CiJkxzQ=/0x216:2625x1693/1600x900/cdn.vox-cdn.com/uploads/chorus_image/image/51537699/jbareham_160418_0931_0086_FINAL_NO_BUFFER_5MB_02.0.0.jpg");
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    height:550px;
+    background-color: rgb(0, 0, 0,0.5);
+    background-blend-mode: multiply;
+    margin-top: -100px;
+}
+
+
+#review{
+    position: relative;
+}
+
+h1{
+    position: absolute;
+    top: 20px;
+    padding-left: 39rem;
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.904);
+}
+
+.us1{
+    background-color: #253439;
+    text-align: center;
+    width: 22%;
+    height: 200px;
+    opacity: 90%;
+    color: white;
+    position: absolute;
+    top: 170px;
+    margin-left: 40px;
+    padding-top: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 25px;
+    font-style: italic;
+}
+
+.pr1{
+    padding-left: 12rem;
+}
+
+.us2{
+    background-color: #253439;
+    text-align: center;
+    width: 22%;
+    height: 200px;
+    opacity: 90%;
+    color: white;
+    position: absolute;
+    top: 170px;
+    margin-left: 405px;
+    padding-top: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 25px;
+    font-style: italic;
+}
+
+.pr2{
+    padding-left: 35rem;
+}
+
+
+
+
+.us3{
+    background-color: #253439;
+    text-align: center;
+    width: 22%;
+    height: 200px;
+    opacity: 90%;
+    color: white;
+    position: absolute;
+    top: 170px;
+    margin-left: 768px;
+    padding-top: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 25px;
+    font-style: italic;
+}
+
+.pr3{
+    padding-left: 58rem;
+}
+
+
+.us4{
+    background-color: #253439;
+    text-align: center;
+    width: 22%;
+    height: 200px;
+    opacity: 90%;
+    color: white;
+    position: absolute;
+    top: 170px;
+    margin-left: 1130px;
+    padding-top: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 25px;
+    font-style: italic;
+}
+
+.pr4{
+    padding-left: 80rem;
+}
+</style>
  <script src="https://kit.fontawesome.com/de9f6bb63b.js" crossorigin="anonymous"></script>
  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
  <script>
@@ -118,7 +481,59 @@
       integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
       crossorigin="anonymous"
     ></script>
-    <script src="{% static 'anime.js' %}"></script>
-    <script src="{% static 'Fundorafunc.js' %}"></script>
+    <script src="{% static 'anime.js' %}">
+        const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+
+tl.to(".text", { y: "0%", duration: 1, stagger: 0.3 });
+tl.to(".abtus", {x: "0%", duration: 1});
+
+    </script>
+    <script src="{% static 'Fundorafunc.js' %}">
+        const Laptops= document.getElementById('Laptops');
+// const Lap= document.getElementsById("Lap");
+
+const Mobiles= document.getElementById('Mobiles');
+// const Mob= document.getElementsById("Mob");
+
+const Accessories= document.getElementById('Accessories');
+// const Access= document.getElementsById("Access");
+
+
+
+
+Laptops.style.display="inline";
+Mobiles.style.display="none";
+Accessories.style.display="none";
+hAppliances.style.display="none";
+
+
+function laptops(){
+
+    Laptops.style.display="inline";
+    Mobiles.style.display="none";
+    Accessories.style.display="none";
+    hAppliances.style.display="none";
+
+}
+
+function mobiles(){
+
+    Laptops.style.display="none";
+    Mobiles.style.display="inline";
+    Accessories.style.display="none";
+    hAppliances.style.display="none";
+
+}
+
+function accessories(){
+
+    Laptops.style.display="none";
+    Mobiles.style.display="none";
+    Accessories.style.display="inline";
+    hAppliances.style.display="none";
+}
+
+
+    </script>
 </body>
 </html>

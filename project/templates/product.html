@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundora | Products</title>
-    <link rel="stylesheet" type="text/css" href="products.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'product.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 <body>
@@ -13,10 +14,10 @@
     <div class="navbar">  
         <img>
           <ul class="navigation">               
-                  <li class="navli" id="homepg">HOME</li>
-                  <li class="navli">PRODUCTS</li>
-                  <li class="navli">DONATE</li>
-                  <a href="#"><li class="navli">SIGN IN/UP</li></a>          
+                  <a href="Fundoramain.html" class="navlink"><li class="navli" id="homepg">HOME</li></a>
+                  <a href="product.html" class="navlink"><li class="navli">PRODUCTS</li></a>
+                  <a href="donate.html" class="navlink"><li class="navli">DONATE</li></a>
+                  <a href="login.html" class="navlink"><li class="navli">SIGN IN/UP</li></a>          
           </ul>
       </div>
       <div class="container"> 

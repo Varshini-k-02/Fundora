@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="donatestyle.css">
+    <link rel="stylesheet" href="{% static 'donatestyle.css' %}">
     <title>Donate</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
           <img>
             <ul class="navigation">               
                 <a href="Fundoramain.html" class="underlineRemove" ><li  class="navli">HOME</li></a>
-                <li class="navli">PRODUCTS</li>
+                <a href="product.html" class="underlineRemove"><li class="navli">PRODUCTS</li></a>
                 <a href="donate.html" class="underlineRemove" ><li id="selectedNav" class="navli">DONATE</li></a>
                 <a href="login.html" class="underlineRemove"><li class="navli">SIGN IN/UP</li></a>           
             </ul>
@@ -225,6 +226,6 @@
 
 
     </div>
-    <script src="./donateaapp.js" defer></script>
+    <script src="{% static 'donateaapp.js' %}" defer></script>
 </body>
 </html>
