@@ -8,61 +8,223 @@
     <title>Donate</title>
 </head>
 <body>
+
+    <nav>
+        <div class="navbar">  
+          <img>
+            <ul class="navigation">               
+                <a href="Fundoramain.html" class="underlineRemove" ><li  class="navli">HOME</li></a>
+                <li class="navli">PRODUCTS</li>
+                <a href="donate.html" class="underlineRemove" ><li id="selectedNav" class="navli">DONATE</li></a>
+                <a href="login.html" class="underlineRemove"><li class="navli">SIGN IN/UP</li></a>           
+            </ul>
+        </div>
+
+    </nav>
+
     <div class="main" id="main">
-        <label for="ptype">Product Type :</label><br>
+        <!-- <label for="ptype">Product Type :</label><br>
         <input type="text" name="ptype" id="val" placeholder="Product Type"  /><br><br>
         <label for="pcomp">Product company :</label><br>
         <input type="text" name="pcomp" id="val" /><br><br>
         <label for="pmod">Product Model :</label><br>
-        <input type="text" name="pmod" id="val"/><br><br><br> 
+        <input type="text" name="pmod" id="val"/><br><br><br>  -->
+        <h1><center>Enter Product Details</center></h1>
+        <label for="ptype">Product Type :</label><br>
+        <select class="opn2" id="val" >
+                  
+        <option value="laptop" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Laptops</option>
+        <option value="phone">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phones / Tabs</option>
+        <option value="printer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Printers</option>
+     
+
+         </select>
+
+         <br>
+         <br>
+        <label  class="prodcomp" for="pcomp">Product company :</label><br>
+        <!-- <input type="text" name="pcomp" id="val"  /><br><br> -->
+        <select >
+        <option value="Asus" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asus</option>
+        <option value="HP" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HP</option>
+        <option value="Dell" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dell</option>
+        <option value="Acer" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Acer</option>
+        <option value="AppleK" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apple</option>
+        <option value="Lenovo" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lenovo</option>
+        <option value="Samsung" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Samsung</option>
+        <option value="Other" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other</option>
+        </select>
+        <br><br>
+        <label for="pmod">Product Model :</label><br>
+        <input type="text" name="pmod" id="val"/><br><br> 
+
+
+        <div class="confirmb">
         <a href="#" class="Cancel" id="Cancel">Cancel</a>
         <a href="#" class="cont" id="cont">Continue</a>
+
+        </div>
+
     </div>
     <div class="laptop" id="laptop">
+        <h1><center>Laptop Specs</center></h1>
         <label for="lram">Product Ram :</label><br>
-        <input type="text" name="lram" id="lmod" /><br><br>  
+        <!-- <input type="text" name="lram" id="lmod" /><br> -->
+        <select class="opn2" id="lmod" >
+                  
+            <option value="8 GB" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8GB</option>
+            <option value="16 GB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16GB</option>
+            <option value="32 GB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;32GB</option>
+            <option value="Extended 16 GB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extended 16GB</option>
+    
+        </select>
         <label for="lhdd">Product Storage :</label><br>
-        <input type="text" name="lhdd" id="lmod" /><br><br>  
+        <!-- <input type="text" name="lhdd" id="lmod" /><br> -->
+        <select class="opn2" id="lmod" >
+                  
+            <option value="256GB SSD + 1TB HDD" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;256GB SSD + 1TB HDD</option>
+            <option value="500GB SSD">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;500GB SSD </option>
+            <option value="1TB HDD">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1TB HDD</option>
+            <option value="1TB SSD">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1TB SSD</option>
+      
+        </select>
         <label for="lprocessor">Product processor :</label><br>
-        <input type="text" name="lprocessor" id="lmod"/><br><br>  
+        <!-- <input type="text" name="lprocessor" id="lmod"/><br>  -->
+        <select class="opn2" id="lmod" >
+                  
+            <option value="Intel i5 series" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intel i5 series</option>
+            <option value="Intel i7 series" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intel i7 series</option>
+            <option value="Intel i3 series" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intel i3 series</option>
+            <option value="Intel i9 series" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intel i9 series</option>
+            <option value="AMD Ryzen 5 series" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AMD Ryzen 5 series</option>
+            <option value="AMD Ryzen 7 series" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AMD Ryzen 7 series</option>
+            <option value="AMD Ryzen 9 series" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AMD Ryzen 9 series</option>
+            <option value="AMD Ryzen 3 series" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AMD Ryzen 3 series</option>
+            <option value="Intel or Ryzen Optimum" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intel or Ryzen Optimum</option>
+            <option value="Other" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other</option>
+
+     
+    
+        </select>
         <label for="lgraphics">Product Graphics :</label><br>
-        <input type="text" name="lgraphics" id="lmod"/><br><br>  
-        <label for="lscreen">Product Screen-specs :</label><br>
-        <input type="text" name="lscreen" id="lmod"/><br><br>
+        <!-- <input type="text" name="lgraphics" id="lmod"/><br>   -->
+        <select class="opn2" id="lmod" >
+                  
+            <option value="AMD Radeon 5000 series" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AMD Radeon 5000 series</option>
+            <option value="Intel i7 series" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AMD Radeon 6000 series</option>
+            <option value="Intel Dedicated GPU" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intel Dedicated GPU</option>
+            <option value="Intel UHD" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intel UHD</option>
+            <option value="Nvidia MX series" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nvidia MX series</option>
+            <option value="Nvidia GTX 1000 series" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nvidia GTX 1000 series</option>
+            <option value="Nvidia GTX 1000 series" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nvidia GTX 1600 series</option>
+            <option value="Nvidia RTX 2000 series" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nvidia RTX 2000 series</option>
+            <option value="Nvidia RTX 3000 series" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nvidia RTX 3000 series</option>
+            <option value="Other" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other</option>
+     
+    
+        </select>
+        <label for="lscreen">Product Screen-specs :</label>
+        <select class="opn2" id="lmod" >
+                  
+            <option value="13 inch 60hz" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13 inch 60hz HD</option>
+            <option value="15 inch 60hz" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15 inch 60hz HD</option>
+            <option value="15 inch 120hz 4K" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15 inch 120hz 4K</option>
+            <option value="17 inch 60hz HD" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;17 inch 60hz HD</option>
+            <option value="17 inch 120hz 4K" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;17 inch 120hz 4K</option>
+            <option value="Other" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other</option>
+     
+    
+        </select>
         <label for="yrs">Product history :</label><br>
         <input type="text" name="yrs" id="lmod"/><br><br>
-        <a href="#" class="back" id="backlp">back</a>
-        <a href="#"><button class="sub" id="lsub" onclick="productData('#lmod')">Submit</button></a>
+        <div class="confirmb">
+        <a href="#" class="back" id="backlp"><button class="sub">back</button></a>
+        <a href="#" class="lapsub"><button class="sub" id="lsub" onclick="productData('#lmod')">Submit</button></a>
+        </div>
     </div>
     <div class="phone" id="phone">
+        <h1><center>Phone Specs</center></h1>
         <label for="mram">Product Ram :</label><br>
-        <input type="text" name="mram" id="pmod" /><br><br>  
+        <!-- <input type="text" name="mram" id="pmod" /><br><br>   -->
+        <select class="opn2" id="pmod" >
+                  
+            <option value="2 GB" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2GB</option>
+            <option value="4 GB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4GB</option>
+            <option value="8 GB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8GB</option>
+            <option value="16 GB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16GB</option>
+    
+        </select>
         <label for="mhdd">Product Storage :</label><br>
-        <input type="text" name="mhdd" id="pmod" /><br><br>  
-        <label for="mprocessor">Product processor :</label><br>
-        <input type="text" name="mprocessor" id="pmod"/><br><br>  
-        <label for="mgraphics">Product Graphics :</label><br>
-        <input type="text" name="mgraphics" id="pmod"/><br><br>  
+        <!-- <input type="text" name="mhdd" id="pmod" /><br><br>   -->
+        <select class="opn2" id="pmod" >
+                  
+            <option value="32 GB" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;32GB</option>
+            <option value="64 GB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;64GB</option>
+            <option value="128 GB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;128GB</option>
+      
+        </select>
+        <label for="mprocessor">Processor Brand :</label><br>
+        <!-- <input type="text" name="mprocessor" id="pmod"/><br><br>   -->
+        <select class="opn2" id="pmod" >
+                  
+            <option value="Qualcomm" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Qualcomm</option>
+            <option value="HiSilicon" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HiSilicon</option>
+            <option value="MediaTek" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MediaTek</option>
+            <option value="Apple" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apple</option>
+            <option value="Samsung" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Samsung</option>
+            <option value="Other" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other</option>
+     
+    
+        </select>
+        <label for="mgraphics">Processor Core Setup :</label><br>
+        <!-- <input type="text" name="mgraphics" id="pmod"/><br><br>   -->
+        <select class="opn2" id="pmod" >
+                  
+            <option value="Qualcomm" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;(2+4)</option>
+            <option value="HiSilicon" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;(1+3+4)</option>
+            <option value="MediaTek" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;(2+2+4)</option>
+            <option value="Apple" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;(4+4)</option>
+            <option value="Samsung" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;(2)</option>
+            <option value="Samsung" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;(2+2)</option>
+            <option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10&nbsp;(2+4+4)</option></option>
+     
+    
+        </select>
         <label for="mscreen">Product Screen-specs :</label><br>
-        <input type="text" name="mscreen" id="pmod"/><br><br>
+        <input type="text" name="mscreen" id="pmod"/><br>
         <label for="yrs">Product history :</label><br>
         <input type="text" name="yrs" id="pmod"/><br><br>  
-        <a href="#" class="back" id="backph">back</a>
-        <button class="sub" id="psub" onclick="productData('#pmod')">Submit</button>
+        <!-- <a href="#" class="back" id="backph">back</a>
+        <button class="sub" id="psub" onclick="productData('#pmod')">Submit</button> -->
+        <div class="confirmb">
+        <a href="#" class="back" id="backph"><button class="sub">back</button></a>
+        <a href="#" class="lapsub"><button class="sub" id="psub" onclick="productData('#pmod')">Submit</button></a>
+        </div>
     </div>
     <div class="printer" id="printer">
+        <h1><center>Printer Specs</center></h1>
         <label for="pcat">Product Catridge :</label><br>
         <input type="text" name="pcat" id="prmod" /><br><br> 
         <label for="pcap">Product page-capacity :</label><br>
         <input type="text" name="pcomp" id="prmod" /><br><br>
         <label for="yrs">Product history :</label><br>
         <input type="text" name="yrs" id="prmod"/><br><br>
-        <a href="#" class="back" id="backpr">back</a>
-        <button class="sub" id="prsub" onclick="productData('#prmod')">Submit</button>
+        <!-- <a href="#" class="back" id="backpr">back</a>
+        <button class="sub" id="prsub" onclick="productData('#prmod')">Submit</button> -->
+        <div class="confirmb">
+            <a href="#" class="back" id="backpr"><button class="sub">back</button></a>
+            <a href="#" class="lapsub"><button class="sub" id="prsub" onclick="productData('#prmod')">Submit</button></a>
+        </div>
     </div>
+    
     <ul id="summary">
     
     </ul>
+
+    <div class="end"> 
+
+
+    </div>
     <script src="./donateaapp.js" defer></script>
 </body>
 </html>
