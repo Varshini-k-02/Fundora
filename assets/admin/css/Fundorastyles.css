@@ -5,14 +5,14 @@
     padding:0px;
     box-sizing: border-box;
     list-style: none;
-    font-family: 'Catamaran', sans-serif;
+    font-family: 'Catamaran', 'sans-serif';
     overflow-x: hidden;
    
 }
 
-/* html{
-    min-width: 800px;
-} */
+html{
+    min-width: 576px;
+}
 
 .iframe{
  position: relative;
@@ -63,7 +63,6 @@ iframe{
     justify-content: space-around;
     height: 80px;
     width: 120px;
-
     border-bottom: transparent solid 2px;
     align-items: center;
     font-size: 18px;
@@ -76,15 +75,16 @@ iframe{
     border-bottom: #ffce6d solid 2px;
 }
 
-.underlineRemove{
-
-    text-decoration: none;
-}
 #selectedNav{
 
     color: #FFCE6D;
     border-bottom: transparent solid 2px;
 }
+.underlineRemove{
+
+    text-decoration: none;
+}
+
 a{
     text-decoration: none;
     
@@ -160,12 +160,13 @@ a{
 }
 
 .abtus{
+   
     text-align: center;
     font-size: 30px;
-    background-color: #aba597ea;
+    background-color: #ffdea2dc;
     padding: 70px;
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.598); 
-    
+    color: #253439;
    
 }
 
@@ -187,13 +188,12 @@ p{
     padding-top: 100px;
     color: #F6F4F1;
     
-    
-    
 }
 
 
 
 .intro {
+
     background: #253439;
     position: relative;
     top: 0;
@@ -204,7 +204,7 @@ p{
     
   }
 
-  .slider {
+  /* .slider {
     background: rgb(97, 105, 109);
     position: fixed;
     top: 0;
@@ -212,7 +212,7 @@ p{
     width: 100%;
     height: 100%;
     transform: translateY(-100%);
-  }
+  } */
 
   .hide {
     background: #253439;
@@ -354,3 +354,191 @@ h1{
 .pr4{
     padding-left: 80rem;
 }
+
+footer{
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+ position: absolute;
+ height: 70%;
+ width: 100%;
+ background-color: #365B6D;
+ box-shadow: 0px 0px 30px 15px black ;
+
+
+}
+
+.footholder{
+   
+    height: 480px;
+    width: 1450px;
+ 
+    background-color: #253439;
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid  #FFCE6D ;
+}
+
+.fundlogo{
+
+
+    height:400px;
+    width: 400px;
+    background-image: url("logo.jpg");
+    background-size: cover;
+    border: 1px solid  #FFCE6D ;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contactscont{
+
+    /* border: 1px solid  #FFCE6D ; */
+    height: 90%;
+    width: 800px;
+    color: #F6F6E9;
+
+}
+
+.contactus{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    align-items:center ;
+
+}
+.mandpcontact1{
+    width: 300px;
+    height:90px;
+    display: flex;
+   
+    justify-content: space-around;
+    align-items:center ;
+}
+
+.mandpcontact2{
+    
+    width: 170px;
+        height:90px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items:center ;
+    
+    
+}
+.mailtext{
+
+    font-size: 20px;
+}
+.phno{
+    margin-top: 15px;
+    font-size: 21px;
+}
+
+.phone{
+    margin-left: 15px;
+}
+
+.quickbutons{
+
+    height:170px;
+    width: 640px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+
+
+}
+
+.qbutton{
+    border: 0px;
+    text-decoration: none;
+    font-size: 22px;
+    height:65px;
+    width:200px;
+    background-color: #FFCE6D;
+}
+.qbutton:hover{
+
+   
+        transition: 0.5s;
+        background-color: #88c1c5;
+        color:#F6F6E9 ;
+    
+    
+}
+
+.q{
+    /* margin-top: 20px; */
+    height:65px;
+    width:200px;
+    border-radius: 10px;
+   /* margin-top: 20px; */
+   margin-right: 15px;
+}
+
+.socialm{
+    
+    height: 100px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon{
+    height:80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.intro1 {
+    background: #253439;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slider {
+    background: #FFCE6D;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+  }
+  
+  .intro-text1 {
+    color: rgb(233, 233, 233);
+    font-family: "Heebo", sans-serif;
+    font-size: 3rem;
+    
+    margin-top: 100px;
+    margin-right: 1800px;
+    padding-right: 100px;
+  }
+  
+  .hide1 {
+    background: #253439;
+    overflow: hidden;
+    margin-top: 130px;
+  }
+  
+  .hide1 span {
+    transform: translateY(100%);
+    display: inline-block;
+  }
