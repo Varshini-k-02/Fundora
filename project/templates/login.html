@@ -15,18 +15,18 @@
         </div>
     <form class="form" id="form" action="login.html" method="post">
         {% csrf_token %}
-        <label for="first-name">First Name :</label><br>
-        <input type="text" name="fname" id="first-name" /><br>   
+        <label for="first-name"  >First Name :</label><br>
+        <input type="text" name="fname" id="first-name" style="font-size: 15pt" /><br>   
         <label for="last-name">Last Name :</label><br>
-        <input type="text" name="lname" id="last-name" /><br>
+        <input type="text" name="lname" id="last-name" style="font-size: 15pt" /><br>
         <label for="email-id">Email Id :</label><br>
-        <input type="text" name="emailid" id="email-id" /><br>
-        <label for="Phone-no">Phone No :</label><br>
-        <input type="text" name="phno" id="Phone-no" /><br>
+        <input type="text" name="emailid" id="email-id" style="font-size: 15pt"/><br>
+        <!-- <label for="Phone-no">Phone No :</label><br>
+        <input type="text" name="phno" id="Phone-no" /><br> -->
         <label for="Password">Password :</label><br>
-        <input type="password" name="pwd" id="password" /><br>
+        <input type="password" name="pwd" id="password" style="font-size: 15pt" /><br>
         <label for="ConfirmPass">Confirm Password :</label><br>
-        <input type="password" name="cpwd" id="Specs" /><br>
+        <input type="password" name="cpwd" id="Specs" style="font-size: 15pt" /><br>
         <button type="submit "class="submit" id="submit">Submit</button><br><br>
         <!--new changes-->
         <p class="account">Already have an account? <a href="#" onclick="displayLogin()" class="hide">Sign in</a></p>
@@ -38,9 +38,9 @@
     <form class="form1" id="form1" action='Fundoramain.html' method="post">
         {% csrf_token %}
         <label for="email-id">Email Id :</label><br>
-        <input type="text" name="emailid" id="email-id" /><br>
+        <input type="text" name="emailid" id="email-id" style="font-size: 15pt" /><br>
         <label for="Password">Password :</label><br>
-        <input type="password" name="pwd" id="Specs" /><br>
+        <input type="password" name="pwd" id="Specs" style="font-size: 15pt"/><br>
         <button type="submit "class="submit" id="submit">Log in</button><br><br>
         <p class="account">Dont have an account? <a href="#" class="hide" id="hide" onclick="logoHeight()">Sign up</a></p>
     </form>

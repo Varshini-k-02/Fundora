@@ -107,12 +107,14 @@
 <div class="pr3">
 <i class="far fa-user fa-2x"></i>
 </div>
-<div class="pr4">
-    <i class="far fa-user fa-2x"></i>
-    </div>
 <div class="us4">
-        <h5>I was able to buy a laptop from this website at an affordable cost. It works just as fine as a new laptop would. </h5>
+    <h5>I was able to buy a laptop from this website at an affordable cost. It works just as fine as a new laptop would. </h5>
+</div>
+<div class="pr4">
+ <i class="far fa-user fa-2x"></i>
     </div>
+
+
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
 
@@ -482,13 +484,13 @@ h1{
       crossorigin="anonymous"
     ></script>
     <script src="{% static 'anime.js' %}">
-        const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+    const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
-tl.to(".text", { y: "0%", duration: 1, stagger: 0.3 });
-tl.to(".abtus", {x: "0%", duration: 1});
+    tl.to(".text", { y: "0%", duration: 1, stagger: 0.3 });
+    tl.to(".abtus", {x: "0%", duration: 1});
 
     </script>
-    <script src="{% static 'Fundorafunc.js' %}">
+<script src="{% static 'Fundorafunc.js' %}">
         const Laptops= document.getElementById('Laptops');
 // const Lap= document.getElementsById("Lap");
 
@@ -534,6 +536,6 @@ function accessories(){
 }
 
 
-    </script>
+</script>
 </body>
 </html>
