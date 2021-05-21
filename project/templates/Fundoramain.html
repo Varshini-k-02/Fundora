@@ -1,12 +1,12 @@
 
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="Fundorastyles.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'Fundorastyles.css' %}">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" type="image" href="imageonline-co-whitebackgroundremoved.png">
     <title>HOME | Fundora</title>
@@ -503,7 +503,7 @@ h1{
       integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
       crossorigin="anonymous"
     ></script>
-    <script src="{% static 'anime.js' %}">
+<script src="{% static 'anime.js' %}">
     const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
     tl.to(".text", { y: "0%", duration: 1, stagger: 0.3 });
