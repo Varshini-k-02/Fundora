@@ -44,4 +44,7 @@ def signin(request):
             return render(request,'login.html')
     else:
         return redirect('login.html')
-
+def donate(request):
+    return render(request,'donate.html')
+def product(request):
+    return render(request,'product.html')

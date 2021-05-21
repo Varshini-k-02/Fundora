@@ -126,3 +126,7 @@ nav{
     position:relative;
     left:20.5%;
 }
+.navlink{
+    cursor:pointer;
+    text-decoration: none;
+}
