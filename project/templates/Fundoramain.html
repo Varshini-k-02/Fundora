@@ -178,7 +178,6 @@
 </footer>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
-
 *{
     margin:0px;
     padding:0px;
@@ -190,7 +189,7 @@
 }
 
 html{
-    min-width: 576px;
+    min-width: 724px;
 }
 
 .iframe{
@@ -212,17 +211,48 @@ iframe{
     height:100%;
 }
 
+nav{
+    height:100vh;
+    background-image: url("https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-size: cover;
+    background-color: rgb(0, 0, 0,0.5);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+   
+}
+
+.maintxt span{
+
+     color: #F6F6E9;
+     font-size: 120px;
+     font-weight: 900;
+    
+}
+
+.maintxt{
+    
+    position: relative;
+   
+    color: #F6F6E9;
+    height: 85vh;
+    width: 100%;
+  padding-top: 100px;
+  padding-bottom: 0px;
+    font-weight: 800;
+    font-size:75px;
+}
 .navbar{
 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: start;
-    height:950px;
-    background-image: url("https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-    background-size: cover;
-    background-color: rgb(0, 0, 0,0.4);
-    background-blend-mode: multiply;
+    height:100px;
+    width: 100%;
+    /* background-image: url("https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"); */
+
 }
 
 .navigation{
@@ -242,6 +272,7 @@ iframe{
     justify-content: space-around;
     height: 80px;
     width: 120px;
+    /* padding-top: 20px; */
     border-bottom: transparent solid 2px;
     align-items: center;
     font-size: 18px;
@@ -595,7 +626,7 @@ footer{
     width: 300px;
     height:90px;
     display: flex;
-   
+    /* position: relative; */
     justify-content: space-around;
     align-items:center ;
 }
@@ -608,11 +639,13 @@ footer{
         flex-wrap: wrap;
         justify-content: space-between;
         align-items:center ;
-    
+    position: relative;
+    right:100px;
     
 }
 .mailtext{
 
+    margin-left: -90px;
     font-size: 20px;
 }
 .phno{
@@ -702,12 +735,12 @@ footer{
   }
   
   .intro-text1 {
-    color: rgb(233, 233, 233);
+    color: rgb(255, 255, 255);
     font-family: "Heebo", sans-serif;
     font-size: 3rem;
     
     margin-top: 100px;
-    margin-right: 1800px;
+    margin-right: 1600px;
     padding-right: 100px;
   }
   
@@ -720,6 +753,11 @@ footer{
   .hide1 span {
     transform: translateY(100%);
     display: inline-block;
+  }
+  .FUndoratxt{
+      
+    color: rgb(255, 255, 255);
+    font-size:110px;
   }
 </style>
  <script src="https://kit.fontawesome.com/de9f6bb63b.js" crossorigin="anonymous"></script>
