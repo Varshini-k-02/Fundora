@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
 *{
     padding: 0%;
     box-sizing: border-box;
     font-size: 30px;
     margin: 0 auto;
-    font-family: sans-serif;
+    font-family: 'Catamaran', 'sans-serif';
 }
 
 body{
@@ -37,7 +39,7 @@ header{
 }
 
 .form label{
-    font-size: 15px;
+    font-size: 20px;
 }
 .form button{
     font-size: 20px;
@@ -53,6 +55,8 @@ header{
     color: black;
 }
 input{
+    padding-left: 10px;
+    width:100%;
     margin-bottom: 15px;
 }
 .logo{
@@ -96,7 +100,7 @@ input{
     font-size: 20px;
 }
 .form1 label{
-    font-size: 15px;
+    font-size: 20px;
 }
 .form1 button{
     font-size: 20px;

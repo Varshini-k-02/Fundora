@@ -37,7 +37,7 @@ def signin(request):
         user=auth.authenticate(email=emailid,password=pwd)
         
         if user is not None:
-            auth.login(request,user)
+            auth.signin(request,user)
             return redirect('Fundoramain.html')
         else:
             messages.info(request,"Invalid Credentials")
