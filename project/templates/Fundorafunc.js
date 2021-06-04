@@ -13,7 +13,7 @@ const Accessories= document.getElementById('Accessories');
 Laptops.style.display="inline";
 Mobiles.style.display="none";
 Accessories.style.display="none";
-hAppliances.style.display="none";
+
 
 
 function laptops(){
