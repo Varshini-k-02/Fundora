@@ -13,6 +13,32 @@ body{
     background-image: url("https://images.pexels.com/photos/168765/pexels-photo-168765.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-size: cover;
 }
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000000; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:linear-gradient(
+        #FFCE6D,
+        #000000
+    );
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:linear-gradient(
+        #000000,
+        #FFCE6D        
+        
+    );
+    transition: 1.5s;
+  }
 .navbar{
 
     display: flex;

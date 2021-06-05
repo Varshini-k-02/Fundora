@@ -8,7 +8,7 @@
     <title>Fundora | Products</title>
     <link rel="stylesheet" type="text/css" href="{% static 'product.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="shortcut icon" type="image" href="Fundoralogo.png">
+    <link rel="shortcut icon" type="image" href="{% static 'Fundoralogo.png' %}">
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
 
@@ -61,7 +61,7 @@ nav{
     justify-content: space-around;
     height: 80px;
     width: 120px;
-    padding-top: 20px;
+  
     border-bottom: transparent solid 2px;
     align-items: center;
     font-size: 18px;
@@ -72,6 +72,11 @@ nav{
     color: #FFCE6D;
     transition: .45s;
     border-bottom: #ffce6d solid 2px;
+}
+#selectedNav{
+
+    color: #FFCE6D;
+    border-bottom: transparent solid 2px;
 }
 
 .card-title{
@@ -143,11 +148,11 @@ nav{
 </head>
 <body>
     <nav>
-    <div class="navbar">  
+    <div class="navbar" style="padding-bottom: -5px">  
         <img>
           <ul class="navigation">               
                   <a href="Fundoramain.html" class="navlink"><li class="navli" id="homepg">HOME</li></a>
-                  <a href="product.html" class="navlink"><li class="navli">PRODUCTS</li></a>
+                  <a href="product.html" class="navlink"><li class="navli" id="selectedNav">PRODUCTS</li></a>
                   <a href="donate.html" class="navlink"><li class="navli">DONATE</li></a>
                   <a href="login.html" class="navlink"><li class="navli">SIGN IN/UP</li></a>          
           </ul>
@@ -411,7 +416,32 @@ nav{
     
    
 }
-
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000000; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:linear-gradient(
+        #FFCE6D,
+        #000000
+    );
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:linear-gradient(
+        #000000,
+        #FFCE6D        
+        
+    );
+    transition: 1.5s;
+  }
 nav{
 
     display: flex;

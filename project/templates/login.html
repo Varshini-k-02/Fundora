@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'style.css' %}">
-    <link rel="shortcut icon" type="image" href="Fundoralogo.png">
+    <link rel="shortcut icon" type="image" href="{% static 'Fundoralogo.png' %}">
     <title>Fundora | Login/SignUp</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
         <div class="logo" id="logo">
            <a href="Fundoramain.html"> <img src="{% static 'logo.jpg' %}" class="logoimg" alt="logo"> </a> 
         </div>
-    <form class="form" id="form" action="login.html" method="post">
+    <form class="form" id="form" action="login.html" method="post" style="margin-right:-5px">
         {% csrf_token %}
         <label for="first-name"  >First Name :</label><br>
         <input type="text" name="fname" id="first-name" style="font-size: 15pt" /><br>   
@@ -36,7 +36,7 @@
         <!--new changes-->
        
         <!--new changes-->
-    <form class="form1" id="form1" action='Fundoramain.html' method="post">
+    <form class="form1" id="form1" action='Fundoramain.html' method="post" style="margin-right:-5px">
         {% csrf_token %}
         <label for="email-id">Email Id :</label><br>
         <input type="text" name="emailid" id="email-id" style="font-size: 15pt" /><br>
@@ -55,6 +55,168 @@
             {% endfor %}
         </div>
     </header>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
+*{
+    padding: 0%;
+    box-sizing: border-box;
+    font-size: 30px;
+    margin: 0 auto;
+    font-family: 'Catamaran', 'sans-serif';
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000000; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:linear-gradient(
+        #FFCE6D,
+        #000000
+    );
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:linear-gradient(
+        #000000,
+        #FFCE6D        
+        
+    );
+    transition: 1.5s;
+  }
+body{
+    background-color: #253439;
+    
+}
+
+header{
+
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.form{
+    max-width: 1440px;
+    z-index: 100;
+    padding: 30px 40px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* position: absolute;
+    left: 75%;
+    top: 50%;
+    transform: translate(-50%,-50%); */
+    font-size: 20px;
+}
+
+.form label{
+    font-size: 20px;
+}
+.form button{
+    font-size: 20px;
+    padding: 6px 15px;
+    background-color: #61A6AB;
+    border: 1px #61A6AB solid;
+    border-radius: 10px;
+    color: white;
+}
+.form button:hover{
+    background-color: #8cc5ca;
+    transition: 0.5s;
+    color: black;
+}
+input{
+    padding-left: 10px;
+    width:100%;
+    margin-bottom: 15px;
+}
+.logo{
+    /* position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%); */
+    border: 2px white solid;
+    border-radius: 10px;
+    display: flex;
+   
+}
+.logo img{
+    height: 500px;
+    border-radius: 10px;
+}
+
+
+/*new changes*/
+.form.visible{
+    display: none;
+}
+.account{
+    font-size: 20px;
+}
+.account a{
+    font-size: 20px;
+}
+.form1{
+    max-width: 1440px;
+    z-index: 1;
+    padding: 30px 40px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* position: absolute;
+    left: 75%;
+    top: 50%;
+    transform: translate(-50%,-50%); */
+    font-size: 20px;
+}
+.form1 label{
+    font-size: 20px;
+}
+.form1 button{
+    font-size: 20px;
+    padding: 6px 15px;
+    background-color: #61A6AB;
+    border: 1px #61A6AB solid;
+    border-radius: 10px;
+    color: white;
+}
+.form1 button:hover{
+    background-color: #8cc5ca;
+    transition: 0.5s;
+    color: black;
+}
+.form1.visible{
+    display: none;
+}
+.hide{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 15px;
+    background-color: #61A6AB;
+    border: 1px #61A6AB solid;
+    border-radius: 10px;
+    color: white;
+}
+.hide a:hover{
+    background-color: #8cc5ca;
+    transition: 0.5s;
+    color: black;
+    cursor: context-menu;
+}
+    </style>
     <script src="{% static 'app.js' %}" defer>
         
     </script>
